@@ -1,0 +1,83 @@
+.home__content {
+    grid-template-columns: 116px repeat(2, 1fr);
+    padding-top: 5.5rem;
+    column-gap: 2rem;
+    align-items: center;
+}
+
+.home__social {
+    display: grid;
+    grid-template-columns: max-content;
+    row-gap: 2rem;
+}
+
+.home__social-icon {
+    font-size: 1.25rem;
+    color: var(--title-color);
+}
+
+.home__social-icon:hover {
+    color: var(--title-color-dark);
+}
+
+.home__title {
+    font-size: var(--big-font);
+    margin-bottom: 0.58rem;
+}
+
+.home__hand {
+    width: 38px;
+    height: 38px;
+    margin-left: 0.4rem;
+}
+
+.home__subtitle {
+    position: relative;
+    font-size: var(--h3-font);
+    padding-left: 5.4rem;
+    font-weight: var(--font-normal);
+    margin-bottom: 1rem;
+}
+
+.home__subtitle::before {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 1px;
+    background-color: var(--text-color);
+    left: 0;
+    top: 1rem;
+}
+
+.home__description {
+    max-width: 400px;
+    margin-bottom: 2rem;
+}
+
+.home__img {
+    background: url(../../assets/portfolioprf.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    ;
+    order: 1;
+    justify-self: center;
+    width: 300px;
+    height: 300px;
+    animation: profile_animation 7s ease-in-out infinite 0s;
+}
+
+@keyframes profile_animation {
+    0% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+
+    50% {
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+
+    100% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+}
