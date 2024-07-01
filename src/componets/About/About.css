@@ -1,0 +1,4 @@
+.about__info {
+    display: flex;
+    flex-wrap: wrap;
+}
