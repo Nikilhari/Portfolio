@@ -3,6 +3,7 @@ import './About.css'
 import Aboutimg from "../../assets/portfolioprf.jpg"
 import Info from './Info'
 import CV from '../../assets/CV.pdf'
+//4
 const About = () => {
     return (
         <div className="about section" id="about">
