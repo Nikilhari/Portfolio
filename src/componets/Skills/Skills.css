@@ -13,8 +13,8 @@
 }
 .skills__title{
     font-size: var(--normal-font);
-    font-weight: var(--font-medium);
-    text-align:center;
+    font-weight : var(--font-medium);
+    text-align : center;
     margin-bottom: 2.5rem;
 }
 .skills__box{
