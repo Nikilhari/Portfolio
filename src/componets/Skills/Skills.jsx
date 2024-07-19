@@ -1,6 +1,6 @@
 import Frontend from './Frontend';
 import Backend from './Backend';
-
+import './Skills.css'
 const Skills = () => {
     return (
         <div className="skills section" id="skills">

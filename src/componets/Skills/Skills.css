@@ -1,3 +1,45 @@
+.skills__container{
+    display: flex;
+    /* grid-template-columns: repeat(2,350px); */
+    gap:3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .skills__content{
-    
+    background-color: white;
+    border: 1px solid rgba(0,0,0,0.1);
+    padding: 2rem 4rem;
+    border-radius: 1.25rem;
+}
+.skills__title{
+    font-size: var(--normal-font);
+    font-weight: var(--font-medium);
+    text-align:center;
+    margin-bottom: 2.5rem;
+}
+.skills__box{
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+}
+.skills__group{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.skills__data{
+    display: flex;
+    column-gap: .5rem;
+}
+.skills bx-badge-check{
+    font-size: 1rem;
+    color: var(--title-color);
+}
+.skills__name{
+    font-size: var(--normal-font);
+    font-weight: var(--font-medium);
+    line-height: 18px;
+}
+.skills__level{
+    font-size: var(--tiny-font);
 }

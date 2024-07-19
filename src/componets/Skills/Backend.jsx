@@ -12,7 +12,7 @@ const Backend = () => {
             <i className='bx bx-badge-check'></i>
             <div>
                 <h3 className="skills__name">
-                    Node Js
+                    Node
                 </h3>
                 <span className="skills__level">Basic</span>
             </div>
@@ -26,6 +26,8 @@ const Backend = () => {
                 <span className="skills__level">Basic</span>
             </div>
             </div>
+        </div>
+        <div className="skills__group">
             <div className="skills__data">
             <i className='bx bx-badge-check'></i>
             <div>
