@@ -9,12 +9,12 @@ export const ProjectData =[
         title: "Anonymous feedback app",
         category: "web"
     },
-    {
-        id:2,
-        image: Work2,
-        title: "farmify",
-        category: "web"
-    },
+    // {
+    //     id:2,
+    //     image: Work2,
+    //     title: "farmify",
+    //     category: "web"
+    // },
     {
         id:3,
         image: Work3,
@@ -27,4 +27,15 @@ export const ProjectData =[
         title: "IPL Winning prediction app",
         category: "ML"
     }
-]
+];
+export const projectsNav =[
+    {
+        name:'all',
+    },
+    {
+        name:'web',
+    },
+    {
+        name:'ML',
+    }
+];
