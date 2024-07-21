@@ -7,7 +7,7 @@ const Contact = () => {
                 Get in touch
             </h2>
             <span className="section__subtitle">Contact me</span>
-            <div className="contact_container container">
+            <div className="contact__container container">
                 <div className="contact__content">
                     <h3 className="contact__title">
                         Talk to me</h3>
@@ -24,7 +24,7 @@ const Contact = () => {
                                 <i className="bx bxl-whatsapp contact__card-icon"></i>
                                 <h3 className="contact__card-title">Whatsapp</h3>
                                 <span className="contact__card-data">90479 10486</span>
-                                <a href="" className="contact__button">Write me <i className="bx bx-right-arrow-alt"></i>
+                                <a href="" className="contact__button">Write me <i className="bx bx-right-arrow-alt contact__button-icon"></i>
 
                                 </a>
                             </div>
@@ -36,19 +36,18 @@ const Contact = () => {
                             <label htmlFor="" className="contact__form-tag">Name</label>
                             <input type="text" name='name' className="contact__form-input" placeholder='Enter your name'/>
                         </div>
-                    </form>
-                    <form className="contact__form">
+                    
                         <div className="contact__form-div">
                             <label htmlFor="" className="contact__form-tag">Email</label>
                             <input type="email" name='email' className="contact__form-input" placeholder='Enter your email'/>
                         </div>
-                    </form>
-                    <form className="contact__form">
+                  
+                    
                         <div className="contact__form-div">
                             <label htmlFor="" className="contact__form-tag">Project</label>
-                            <textarea name="project" cols="30" rows="10" className='contact__form-input' placeholder='Your message'></textarea>
+                            <textarea name="project"  className='contact__form-input' placeholder='Your message'></textarea>
                         </div>
-                        <button className="button button--flex">
+                        <button className="button button--flex contactme__button">
                 Send Message
                 <svg
                     className="button__icon"
