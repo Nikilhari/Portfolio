@@ -1,6 +1,26 @@
-import React from 'react'
-import './Contact.css'
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';import './Contact.css'
 const Contact = () => {
+    const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_t85sl1b', 'template_hosspyj', form.current, {
+        publicKey: '4kg00nUfv1zPz2i2p',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+      e.target.reset();
+  };
+
   return (
     <div className="contact section" id='contact'>
                  <h2 className="section__title">
@@ -31,7 +51,7 @@ const Contact = () => {
                         </div>
                 </div>
                 <div className="contact__content">
-                    <form className="contact__form">
+                    <form className="contact__form" ref={form} onSubmit={sendEmail}>
                         <div className="contact__form-div">
                             <label htmlFor="" className="contact__form-tag">Name</label>
                             <input type="text" name='name' className="contact__form-input" placeholder='Enter your name'/>
