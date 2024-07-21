@@ -47,3 +47,71 @@
 .nav__link:hover {
     color: var(--title-color-dark);
 }
+
+@media screen and (max-width: 992px) {
+    .container{
+        margin-left: 1.5rem !important;
+        margin-right: 1.5rem !important;
+    }
+}
+@media screen and (max-width: 768px) {
+   .header{
+     top: initial;
+     bottom: 0;
+   }
+   .nav__menu{
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--body-color);
+    padding: 2rem 1.5rem 4rem;
+    box-shadow: 0 -1px 4px rgba(0,0,0,0.15);
+    border-radius: 1.5rem 1.5rem 0 0;
+    transition: .3s;
+   }
+   .show__menu{
+    bottom: 0;
+   }
+   .nav__list{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 2rem;
+   }
+   .nav__icon{
+     font-size: 1.2rem;
+   }
+   .nav__close{
+    position: absolute;
+    right: 1.3rem;
+    bottom: .5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--title-color);
+   }
+   .nav__close:hover{
+    color: var(--title-color-dark);
+   }
+   .nav__toggle{
+    font-size: 1.1rem;
+    cursor: pointer;
+   }
+   .nav__toggle:hover{
+    color: var(--title-color-dark);
+   }
+   .nav__icon,.nav__close,.nav__toggle{
+    display: block;
+   }
+}
+@media screen and (max-width: 350px) {
+    .container{
+        margin-left: 1rem !important;
+        margin-right: 1rem !important;
+    }
+    .nav__menu{
+        padding: 2rem .25rem 4rem;
+    }
+    .nav__list{
+        column-count: 0;
+    }
+}
