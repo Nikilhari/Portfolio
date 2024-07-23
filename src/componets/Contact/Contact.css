@@ -98,7 +98,7 @@
 }
 
 .contact__button-icon {
-    transition: .3s;
+    transition: .3s ;
 }
 
 .contact__button:hover .contact__button-icon {
