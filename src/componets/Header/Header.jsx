@@ -3,6 +3,9 @@ import './Header.css'
 const Header = () => {
     const [toggle , setToggle] = useState(false)
     const [active,setActive] = useState(0);
+    const chngActive =(query) =>{
+            setActive(query);
+    }
     return (
         <div className="header">
             <nav className="nav container">
@@ -15,36 +18,36 @@ const Header = () => {
                             </a>
                         </li>
                         <li className="nav__item">
-                            <a href="#about" className={active ==0 ?"nav__link active-link":"nav__link"}>
+                            <a href="#about" className={active ==1 ?"nav__link active-link":"nav__link"}>
                                 <i className="uil uil-user nav__icon"></i>About
                             </a>
                         </li>
                         <li className="nav__item">
-                            <a href="#skills" className={active ==0 ?"nav__link active-link":"nav__link"}>
+                            <a href="#skills" className={active ==2 ?"nav__link active-link":"nav__link"}>
                                 <i className="uil uil-file-alt nav__icon"></i>Skills
                             </a>
                         </li>
                         <li className="nav__item">
-                            <a href="#services" className={active ==0 ?"nav__link active-link":"nav__link"}>
+                            <a href="#services" className={active ==3 ?"nav__link active-link":"nav__link"}>
                                 <i className="uil uil-briefcase nav__icon">
                                 </i>Services
                             </a>
                         </li>
                         <li className="nav__item">
-                            <a href="#projects" className={active ==0 ?"nav__link active-link":"nav__link"}>
+                            <a href="#projects" className={active ==4 ?"nav__link active-link":"nav__link"}>
                                 <i className="uil uil-scenery nav__icon">
                                 </i> Projects
                             </a>
                         </li>
                         <li className="nav__item">
-                            <a href="#certifications" className={active ==0 ?"nav__link active-link":"nav__link"}>
+                            <a href="#certifications" className={active ==5 ?"nav__link active-link":"nav__link"}>
                                 <i className="uil uil-scenery nav__icon">
 
                                 </i> Certifications
                             </a>
                         </li>
                         <li className="nav__item">
-                            <a href="#contact" className={active ==0 ?"nav__link active-link":"nav__link"}>
+                            <a href="#contact" className={active ==6 ?"nav__link active-link":"nav__link"}>
                                 <i className="uil uil-message nav__icon">
                                 </i>Contact
                             </a>
