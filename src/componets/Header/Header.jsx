@@ -52,7 +52,7 @@ const Header = () => {
                         </li>
 
                     </ul>
-                    <i className="uil uil-times nav__close" onClick={()=>{
+                    <i className="uil uil-times nav__close" onClick={( )=>{
                         setToggle(!toggle)
                     }}></i>
                 </div>
