@@ -32,7 +32,27 @@
     height: 38px;
     margin-left: 0.4rem;
 }
+.home__hand:hover {
+    animation: handshake 1.5s ease-in-out 0.2s 3;
+}
 
+@keyframes handshake {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    20% {
+        transform: rotate(-10deg);
+    }
+    40% {
+        transform: rotate(10deg);
+    }
+    60% {
+        transform: rotate(-20deg);
+    }
+    80% {
+        transform: rotate(20deg);
+    }
+}
 .home__subtitle {
     position: relative;
     font-size: var(--h3-font);
