@@ -15,12 +15,12 @@
     cursor: pointer;
 }
 .project__item:hover{
-    background-color: black;
-    color: white;
+    background-color: var(--container-color-opp);
+    color: var(--container-color);
 }
 .activeNav{
-    background-color: black;
-    color: white;
+    background-color: var(--container-color-opp);
+    color: var(--container-color);
 }
 .project__container{
     display: flex;
@@ -29,7 +29,7 @@
     justify-content: center;
 }
 .project__card{
-    background-color: white;
+    background-color: var(--container-color);
     border: 1px solid rgba(0,0,0,0.1);
     padding: 1.25rem;
     border-radius: 1rem;

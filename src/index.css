@@ -24,11 +24,76 @@
   /* color */
   --hue: 0;
   --sat: 0%;
+  /* --title-color: hsl(var(--hue), var(--sat), 80%); 
+  --title-color-dark: hsl(var(--hue), var(--sat), 100%); 
+  --text-color: hsl(var(--hue), var(--sat), 75%); 
+  --body-color: hsl(var(--hue), var(--sat), 10%); 
+  --container-color: hsl(0, 0%, 15%);
+  --container-color-opp: white;
+  --modal-bg-color: rgba(255, 255, 255, 0.1); 
+  --profile-box-shadow: rgba(255, 255, 255, 0.1) 0px -23px 25px 0px , 
+  rgba(255, 255, 255, 0.15) 0px -36px 30px 0px inset, 
+  rgba(255, 255, 255, 0.1) 0px -79px 40px 0px inset, 
+  rgba(255, 255, 255, 0.1) 0px 2px 1px, 
+  rgba(255, 255, 255, 0.1) 0px 4px 2px, 
+  rgba(255, 255, 255, 0.1) 0px 8px 4px, 
+  rgba(255, 255, 255, 0.1) 0px 16px 8px, 
+  rgba(255, 255, 255, 0.1) 0px 32px 16px; */
+
+--title-color: hsl(var(--hue), var(--sat), 20%);
+  --title-color-dark: hsl(var(--hue), var(--sat), 0%);
+  --text-color: hsl(var(--hue), var(--sat), 46%);
+  --body-color: hsl(var(--hue), var(--sat), 98%); 
+  --container-color: white;
+  --container-color-opp: hsl(0, 0%, 15%);
+  --modal-bg-color: rgba(0,0,0,0.1);
+  --profile-box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, 
+  rgba(0, 0, 0, 0.17) 0px -36px 30px 0px inset,
+   rgba(0, 0, 0, 0.15) 0px -79px 40px 0px inset, 
+   rgba(0, 0, 0, 0.06) 0px 2px 1px, 
+   rgba(0, 0, 0, 0.09) 0px 4px 2px, 
+   rgba(0, 0, 0, 0.09) 0px 8px 4px, 
+   rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    ;
+  
+}
+/* Light Theme */
+.light-theme {
   --title-color: hsl(var(--hue), var(--sat), 20%);
   --title-color-dark: hsl(var(--hue), var(--sat), 0%);
   --text-color: hsl(var(--hue), var(--sat), 46%);
   --body-color: hsl(var(--hue), var(--sat), 98%);
-  
+  --container-color: white;
+  --container-color-opp: hsl(0, 0%, 15%);
+  --modal-bg-color: rgba(0, 0, 0, 0.1);
+  --profile-box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.17) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -79px 40px 0px inset,
+    rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+/* Dark Theme */
+.dark-theme {
+  --title-color: hsl(var(--hue), var(--sat), 80%);
+  --title-color-dark: hsl(var(--hue), var(--sat), 100%);
+  --text-color: hsl(var(--hue), var(--sat), 75%);
+  --body-color: hsl(var(--hue), var(--sat), 10%);
+  --container-color: hsl(0, 0%, 15%);
+  --container-color-opp: white;
+  --modal-bg-color: rgba(255, 255, 255, 0.1);
+  --profile-box-shadow: rgba(255, 255, 255, 0.1) 0px -23px 25px 0px,
+    rgba(255, 255, 255, 0.15) 0px -36px 30px 0px inset,
+    rgba(255, 255, 255, 0.1) 0px -79px 40px 0px inset,
+    rgba(255, 255, 255, 0.1) 0px 2px 1px,
+    rgba(255, 255, 255, 0.1) 0px 4px 2px,
+    rgba(255, 255, 255, 0.1) 0px 8px 4px,
+    rgba(255, 255, 255, 0.1) 0px 16px 8px,
+    rgba(255, 255, 255, 0.1) 0px 32px 16px;
 }
 
 * {
@@ -112,7 +177,7 @@ img {
 
 .button {
   background-color: var(--title-color);
-  color: #fff;
+  color: var(--container-color);
   padding: 1.25rem 2rem;
   border-radius: 1rem;
   font-weight: var(--font-medium);

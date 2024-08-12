@@ -32,8 +32,7 @@
     align-items: center;
     font-size: var(--small-font);
     font-weight: var(--font-medium);
-    color: hsl(var(--hue), var(--sat), 30%);
-    ;
+ 
     align-items: center;
 }
 
@@ -42,7 +41,22 @@
 .nav__icon {
     display: none;
 }
+.theme__button {
+    position: fixed;
+    top: 1rem;
+    right: 2rem;
+    
+}
 
+.theme__button:hover {
+    background-color: var(--button-bg-hover-color);
+    color: var(--button-text-hover-color);
+}
+
+.theme__button:active {
+    background-color: var(--button-bg-active-color);
+    color: var(--button-text-active-color);
+}
 .active-link,
 .nav__link:hover {
     color: var(--title-color-dark);
@@ -102,6 +116,11 @@
    .nav__icon,.nav__close,.nav__toggle{
     display: block;
    }
+   .theme__button {
+    top: 0.5rem;
+    right: 1rem;
+    
+}
 }
 @media screen and (max-width: 350px) {
     .container{

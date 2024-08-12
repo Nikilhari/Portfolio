@@ -4,7 +4,7 @@
 }
 
 .certifications__card{
-    background-color: white;
+    background-color: var(--container-color);
     border: 1px solid rgba(0,0,0,0.1);
     padding: 1.5rem 2rem;
     border-radius: 1.5rem;
@@ -15,6 +15,7 @@
 }
 .certifications__img{
     width: 60px;
+    border-radius: 50%;
 }
 .certifications__name{
     font-size: var(--normal-font);
