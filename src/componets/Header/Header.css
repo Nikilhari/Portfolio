@@ -45,7 +45,6 @@
     position: fixed;
     top: 1rem;
     right: 2rem;
-    
 }
 
 .theme__button:hover {
@@ -66,6 +65,13 @@
     .container{
         margin-left: 1.5rem !important;
         margin-right: 1.5rem !important;
+    }
+}
+@media screen and (max-width: 1165px) {
+    .theme__button {
+        position: relative;
+        bottom: -3rem;
+        left: 2rem;
     }
 }
 @media screen and (max-width: 768px) {
@@ -117,8 +123,11 @@
     display: block;
    }
    .theme__button {
-    top: 0.5rem;
-    right: 1rem;
+    position: fixed;
+    height: fit-content;
+    width: fit-content;
+    top: 1rem;
+    left: 1rem;
     
 }
 }
