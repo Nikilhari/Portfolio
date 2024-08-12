@@ -7,7 +7,8 @@ export const ProjectData =[
         id:1,
         image: Work1,
         title: "Anonymous feedback app",
-        category: "web"
+        category: "web",
+        link:"https://whispherwire.netlify.app/"
     },
     // {
     //     id:2,
@@ -19,13 +20,15 @@ export const ProjectData =[
         id:3,
         image: Work3,
         title: "Movie recommendation app",
-        category: "ML"
+        category: "ML",
+        link: "https://www.linkedin.com/posts/nikilhari-r-767568259_machinelearning-movierecommendations-streamlit-activity-7172255696355254272-XIyr?utm_source=share&utm_medium=member_desktop"
     },
     {
         id:4,
         image: Work4,
         title: "IPL Winning prediction app",
-        category: "ML"
+        category: "ML",
+        link:"https://www.linkedin.com/posts/nikilhari-r-767568259_systemtron-activity-7159475426942185472-NaW4?utm_source=share&utm_medium=member_desktop"
     }
 ];
 export const projectsNav =[
