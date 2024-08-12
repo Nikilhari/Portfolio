@@ -33,7 +33,7 @@
     margin-left: 0.4rem;
 }
 .home__hand:hover {
-    animation: handshake 1.5s ease-in-out 0.2s 3;
+    animation: handshake 1.5s ease-in-out 0.1s 3;
 }
 
 @keyframes handshake {
