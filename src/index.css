@@ -28,6 +28,7 @@
   --title-color-dark: hsl(var(--hue), var(--sat), 0%);
   --text-color: hsl(var(--hue), var(--sat), 46%);
   --body-color: hsl(var(--hue), var(--sat), 98%);
+  
 }
 
 * {
@@ -67,7 +68,6 @@ ul {
 a {
   text-decoration: none;
   color: var(--text-color);
-
 }
 
 button {
@@ -88,8 +88,11 @@ img {
 .section__title {
   font-size: var(--h1-font);
   color: var(--title-color);
+  transition: 0.3s ease-in-out;
 }
-
+.section__title:hover{
+  rotate: 2deg;
+}
 .section__subtitle {
   display: block;
   font-size: var(--small-font);
@@ -108,7 +111,6 @@ img {
 }
 
 .button {
-  display: inline-block;
   background-color: var(--title-color);
   color: #fff;
   padding: 1.25rem 2rem;
@@ -126,6 +128,7 @@ img {
 }
 
 .button--flex {
-  display: inline-flex;
+  display: flex;
+  width: fit-content;
   align-items: center;
 }

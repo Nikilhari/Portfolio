@@ -1,6 +1,5 @@
 .skills__container{
     display: flex;
-    /* grid-template-columns: repeat(2,350px); */
     gap:3rem;
     flex-wrap: wrap;
     justify-content: center;
