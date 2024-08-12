@@ -5,7 +5,7 @@ const Header = () => {
     const [toggle, setToggle] = useState(false);
     const [active, setActive] = useState(0);
     const [theme,setTheme] = useState(true);
-
+    const [isDarkTheme, setIsDarkTheme] = useState(false);
     const chngActive = (query) => {
         setActive(query);
     }
@@ -62,7 +62,8 @@ const Header = () => {
             </nav>
             <button className="theme__button" onClick={()=>{
                 setTheme(!theme);
-            }}>Theme</button>
+                setIsDarkTheme(!isDarkTheme);
+            }}>{isDarkTheme ? '🌙' : '☀️'}</button>
         </div>
     );
 }

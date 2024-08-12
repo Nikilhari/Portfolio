@@ -47,15 +47,15 @@
     right: 2rem;
 }
 
-.theme__button:hover {
+/* .theme__button:hover {
     background-color: var(--button-bg-hover-color);
     color: var(--button-text-hover-color);
 }
-
+*/
 .theme__button:active {
-    background-color: var(--button-bg-active-color);
-    color: var(--button-text-active-color);
-}
+    /* background-color: var(--button-bg-active-color); */
+    /* color: var(--button-text-active-color); */
+} 
 .active-link,
 .nav__link:hover {
     color: var(--title-color-dark);
