@@ -43,18 +43,21 @@
 }
 .theme__button {
     position: fixed;
-    top: 1rem;
-    right: 2rem;
+    top: 1.5rem;
+    right: 3rem;
 }
+.theme__icon{
+font-size: 26px;
 
-/* .theme__button:hover {
+}
+.theme__button:hover {
     background-color: var(--button-bg-hover-color);
     color: var(--button-text-hover-color);
 }
-*/
-.theme__button:active {
-    /* background-color: var(--button-bg-active-color); */
-    /* color: var(--button-text-active-color); */
+
+.theme__button {
+    background-color: var(--button-bg-active-color);
+    color: var(--button-text-active-color);
 } 
 .active-link,
 .nav__link:hover {

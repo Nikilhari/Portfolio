@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react';
+import { MdDarkMode,MdLightMode } from "react-icons/md";
+
 import './Header.css';
 
 const Header = () => {
     const [toggle, setToggle] = useState(false);
     const [active, setActive] = useState(0);
-    const [theme,setTheme] = useState(true);
-    const [isDarkTheme, setIsDarkTheme] = useState(false);
+    const [theme,setTheme] = useState(false);
+    const [isDarkTheme, setIsDarkTheme] = useState(true);
     const chngActive = (query) => {
         setActive(query);
     }
@@ -63,7 +65,7 @@ const Header = () => {
             <button className="theme__button" onClick={()=>{
                 setTheme(!theme);
                 setIsDarkTheme(!isDarkTheme);
-            }}>{isDarkTheme ? '🌙' : '☀️'}</button>
+            }}>{isDarkTheme ? <MdLightMode className='theme__icon'/> : <MdDarkMode className='theme__icon'/>}</button>
         </div>
     );
 }
