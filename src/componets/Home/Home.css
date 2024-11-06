@@ -16,10 +16,12 @@
 .home__social-icon {
     font-size: 1.25rem;
     color: var(--title-color);
+    fill: var(--title-color) ;
 }
 
 .home__social-icon:hover {
     color: var(--title-color-dark);
+    fill: var(--title-color-dark);
 }
 
 .home__title {
