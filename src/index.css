@@ -132,7 +132,9 @@ body {
   background-color: var(--body-color);
   color: var(--text-color);
 }
-
+body::-webkit-scrollbar{
+  display: none;
+}
 h1,
 h2,
 h3 {
