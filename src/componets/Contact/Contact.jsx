@@ -1,6 +1,6 @@
-import React, { useRef } from 'react';
-import emailjs from '@emailjs/browser';
-import './Contact.css';
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import "./Contact.css";
 
 const Contact = () => {
   const form = useRef();
@@ -9,13 +9,18 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm(import.meta.env.VITE_REACT_APP_SERVICEID,import.meta.env.VITE_REACT_APP_TEMPLATEID, form.current, import.meta.env.VITE_REACT_APP_PUBLICKEY)
+      .sendForm(
+        import.meta.env.VITE_REACT_APP_SERVICEID,
+        import.meta.env.VITE_REACT_APP_TEMPLATEID,
+        form.current,
+        import.meta.env.VITE_REACT_APP_PUBLICKEY
+      )
       .then(
         () => {
-          console.log('SUCCESS!');
+          console.log("SUCCESS!");
         },
         (error) => {
-          console.log('FAILED...', error.text);
+          console.log("FAILED...", error.text);
         }
       );
     e.target.reset();
@@ -33,8 +38,13 @@ const Contact = () => {
               <i className="bx bx-mail-send contact__card-icon"></i>
               <h3 className="contact__card-title">Email</h3>
               <span className="contact__card-data">nikilhari3@gmail.com</span>
-              <a href="mailto:nikilhari3@gmail.com" className="contact__button">
-                Write me <i className="bx bx-right-arrow-alt contact__button-icon"></ i>
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=nikilhari3@gmail.com"
+                target="_blank"
+              >
+                {" "}
+                Write me{" "}
+                <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
             </div>
             <div className="contact__card">
@@ -42,7 +52,8 @@ const Contact = () => {
               <h3 className="contact__card-title">Whatsapp</h3>
               <span className="contact__card-data">90479 10486</span>
               <a href="" className="contact__button">
-                Write me <i className="bx bx-right-arrow-alt contact__button-icon"></i>
+                Write me{" "}
+                <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
             </div>
           </div>
@@ -50,16 +61,39 @@ const Contact = () => {
         <div className="contact__content">
           <form className="contact__form" ref={form} onSubmit={sendEmail}>
             <div className="contact__form-div">
-              <label htmlFor="" className="contact__form-tag">Name</label>
-              <input type="text" name="name" className="contact__form-input" placeholder="Enter your name" required/>
+              <label htmlFor="" className="contact__form-tag">
+                Name
+              </label>
+              <input
+                type="text"
+                name="name"
+                className="contact__form-input"
+                placeholder="Enter your name"
+                required
+              />
             </div>
             <div className="contact__form-div">
-              <label htmlFor="" className="contact__form-tag">Email</label>
-              <input type="email" name="email" className="contact__form-input" placeholder="Enter your email" required/>
+              <label htmlFor="" className="contact__form-tag">
+                Email
+              </label>
+              <input
+                type="email"
+                name="email"
+                className="contact__form-input"
+                placeholder="Enter your email"
+                required
+              />
             </div>
             <div className="contact__form-div">
-              <label htmlFor="" className="contact__form-tag">Project</label>
-              <textarea name="project" className="contact__form-input" placeholder="Your message" required></textarea>
+              <label htmlFor="" className="contact__form-tag">
+                Project
+              </label>
+              <textarea
+                name="project"
+                className="contact__form-input"
+                placeholder="Your message"
+                required
+              ></textarea>
             </div>
             <button className="button button--flex contactme__button">
               Send Message
@@ -86,6 +120,6 @@ const Contact = () => {
       </div>
     </div>
   );
-}
+};
 
 export default Contact;
